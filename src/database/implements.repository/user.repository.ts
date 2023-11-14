@@ -55,6 +55,8 @@ export class UserPostgresRepository implements IUserRepository {
       },
     });
 
+    if (!user) return null;
+
     return transformFromDB({
       ...user,
       role: <RoleAdminstrator>user.role.name,

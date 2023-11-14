@@ -1,6 +1,6 @@
 import { Role } from '@prisma/client';
 import { RoleAdminstrator } from '../../shared/enums/roles.enum';
-import { prisma } from './database.prisma';
+import { prisma } from './database.seed';
 
 export async function roleSeed(): Promise<Role[]> {
   const roleNames = Object.values(RoleAdminstrator).map((name) => ({ name }));
