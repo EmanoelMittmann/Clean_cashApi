@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { CreateUserDto, UpdateUserDto } from 'src/modules/user/dtos/user.dto';
 import { UserEntity } from 'src/modules/user/entities/user.entity';
 import { IUserRepository } from 'src/modules/user/repository/user.repository';
-import { PrismaService } from '../prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
 import { UserAdapter } from 'src/modules/user/adapters/user.adapter';
 import { RoleAdminstrator } from 'src/shared/enums/roles.enum';
 
